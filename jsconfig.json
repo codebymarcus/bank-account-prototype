@@ -1,0 +1,18 @@
+// write jsconfig configuretion with the defined alias in vite.config.js
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*",
+        "./dist/*",
+        ""
+      ],
+      "pages/*": ["src/pages/*"],
+      "assets/*": ["src/assets/*"],
+      "styles/*": ["src/styles/*"],
+      "components/*": ["src/components/*"],
+      "utils/*": ["src/utils/*"],
+    }
+  }
+}
