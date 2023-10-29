@@ -50,7 +50,7 @@ const GoalCard = ({ goal }) => {
       onMouseOut={() => setIsWithdrawEnabled(false)}
       onMouseOver={handleWrapperMouseOver}
       className={clsx(
-        'goal-card relative rounded-lg overflow-hidden w-1/3 h-[200px] flex flex-row justify-between p-3 ',
+        'goal-card relative rounded-lg overflow-hidden h-[200px] flex flex-row justify-between p-3 ',
         percentage < 100 ? 'bg-amber-500' : 'bg-green-500 text-slate-800'
       )}>
       {isWithdrawEnabled && (

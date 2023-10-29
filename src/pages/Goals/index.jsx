@@ -18,7 +18,7 @@ const Goals = () => {
         </div>
         <AddGoalButton />
       </div>
-      <div className="flex flex-row gap-2">
+      <div className="grid grid-cols-3 gap-3">
         {goals.length > 0 && goals.map((goal) => <GoalCard key={goal.id} goal={goal} />)}
       </div>
     </div>
