@@ -21,11 +21,6 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Dashboard />,
-        loader: DefaultLoader,
-      },
-      {
-        path: 'account',
         element: <Account />,
         loader: DefaultLoader,
       },

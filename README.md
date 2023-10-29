@@ -1,8 +1,24 @@
-# React + Vite
+# Bank Account Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Brief project description or tagline
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Installation
+
+1. Clone the repository and install dependencies:
+
+   ```bash
+   git clone https://github.com/codebymarcus/bank-account-prototype.git
+   cd bank-account-prototype
+   npm install
+   
+2. How to run in local:
+   ```bash
+   npm run dev
+
+3. Localhost Url:
+   ```bash
+   http://localhost:3000/  
+   
