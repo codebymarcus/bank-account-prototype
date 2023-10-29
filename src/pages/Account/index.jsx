@@ -1,3 +1,4 @@
+import { format } from 'date-fns'
 import { TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography/typography.const";
 import { Typography } from "components/ui/Typography";
 import { useAtomValue } from "jotai";
@@ -14,8 +15,8 @@ const Account = () => {
   const transactionHistory = useAtomValue(transactionHistoryListFormat);
 
   return (
-    <div className="flex flex-col p-5">
-      <div id="accountBalance" className="p-2">
+    <div className="flex flex-col p-3 gap-3">
+      <div id="accountBalance" className="">
         <div className="rounded bg-slate-900 p-2 flex flex-row justify-between items-center">
           <div className="flex flex-col gap-5">
             <Typography variant={TYPOGRAPHY_VARIANTS.CARD_TITLE} className="text-white">Account balance:</Typography>
@@ -34,7 +35,7 @@ const Account = () => {
           </div>
         </div>
       </div>
-      <div id="accountHistory" className="p-2">
+      <div id="accountHistory" className="py-2">
         <table className="table-auto text-white w-full">
           <thead className="text-left uppercase">
             <tr className="">
@@ -43,6 +44,7 @@ const Account = () => {
               <th className="">Deposit/Withdrawal type</th>
               <th className="">Remarks</th>
               <th className="">Remaining balance</th>
+              <th className="">Created at</th>
             </tr>
           </thead>
           <tbody>
@@ -53,6 +55,7 @@ const Account = () => {
                 <td>{transaction.transaction_method.name}</td>
                 <td>{transaction.remarks}</td>
                 <td>{formatToMoney(transaction.updated_balance)}</td>
+                <td>{format(new Date(transaction.created_at), 'MMM dd, yyyy hh:mm aa')}</td>
               </tr>
             ))}
           </tbody>

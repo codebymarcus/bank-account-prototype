@@ -10,7 +10,7 @@ const Goals = () => {
   const goals = useAtomValue(goalsAtom);
 
   return (
-    <div className="flex flex-col p-5">
+    <div className="flex flex-col p-3">
       <div className="p-3 flex flex-row justify-between items-start">
         <div>
           <Typography variant={TYPOGRAPHY_VARIANTS.HEADER} className={"text-white"}>Goals</Typography>

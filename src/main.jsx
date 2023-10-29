@@ -8,7 +8,6 @@ import ErrorPage from '@/error-page.jsx';
 
 import Account from 'pages/Account';
 import Goals from 'pages/Goals';
-import Dashboard from 'pages/Dashboard';
 
 import { DefaultLoader } from 'components/Loaders';
 
