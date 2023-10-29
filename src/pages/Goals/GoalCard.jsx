@@ -58,7 +58,7 @@ const GoalCard = ({ goal }) => {
           <div className="absolute inset-0 bg-black/80 z-10" />
           <div className='absolute inset-0 flex items-center justify-center z-20'>
             <button onClick={handleWithdrawClick} className='bg-white py-2 px-5 rounded tracking-wider'>
-              <Typography variant={TYPOGRAPHY_VARIANTS.CARD_TITLE}>Withdraw</Typography>
+              <Typography variant={TYPOGRAPHY_VARIANTS.CARD_TITLE}>Withdraw funds</Typography>
             </button>
           </div>
         </>

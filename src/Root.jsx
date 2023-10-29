@@ -27,9 +27,12 @@ function Root() {
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex flex-row">
-      <div className="w-1/6 h-screen bg-slate-900 flex flex-col">
+      <div className="w-1/6 h-screen bg-slate-900 flex flex-col relative">
+        <div className="absolute bottom-0 text-gray-600 p-2">
+          <Typography variant={TYPOGRAPHY_VARIANTS.BODY}>Code by: Mark Jason Aquiatin</Typography>
+        </div>
         <div id="sidebarHeader" className="flex flex-row justify-center items-center w-full py-5 text-white">
-          <Typography variant={TYPOGRAPHY_VARIANTS.CARD_TITLE}>BANK ACCOUNT</Typography>
+          <Typography variant={TYPOGRAPHY_VARIANTS.CARD_TITLE}>BANKING SYSTEM</Typography>
         </div>
         <div id="sidebarLinks" className="flex flex-col gap-2 p-3">
           {MAIN_LINKS.map((link, index) => (

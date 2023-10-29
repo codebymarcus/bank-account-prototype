@@ -14,7 +14,9 @@ const Goals = () => {
       <div className="p-3 flex flex-row justify-between items-start">
         <div>
           <Typography variant={TYPOGRAPHY_VARIANTS.HEADER} className={"text-white"}>Goals</Typography>
-          <Typography variant={TYPOGRAPHY_VARIANTS.BODY} className={"text-white"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eum!</Typography>
+          <Typography variant={TYPOGRAPHY_VARIANTS.BODY} className={"text-white"}>
+            Set your goals and track your progress
+          </Typography>
         </div>
         <AddGoalButton />
       </div>
